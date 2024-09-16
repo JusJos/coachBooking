@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seat Booking System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Seat Booking System</h1>
+    </header>
+    <main>
+        <section>
+            <button id="checkAvailabilityBtn">Check Availability</button>
+            <div id="seatsContainer" class="seats-container"></div>
+        </section>
+        <section>
+            <input type="number" id="numSeats" min="1" max="7" placeholder="Number of seats">
+            <button id="bookSeatsBtn">Book Seats</button>
+            <div id="responseContainer" class="response-container"></div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
