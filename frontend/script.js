@@ -1,7 +1,7 @@
 // Fetch and display available seats
 document.getElementById('checkAvailabilityBtn').addEventListener('click', async () => {
     try {
-        const response = await fetch('/api/seats'); // Update URL if different
+        const response = await fetch('/seats'); // Update URL if different
         if (!response.ok) throw new Error('Network response was not ok');
         const seatsData = await response.json();
         const seatsContainer = document.getElementById('seatsContainer');
@@ -32,7 +32,7 @@ document.getElementById('bookSeatsBtn').addEventListener('click', async () => {
     }
 
     try {
-        const response = await fetch('/api/book', {
+        const response = await fetch('/book', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
