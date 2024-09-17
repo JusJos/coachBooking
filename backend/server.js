@@ -23,7 +23,7 @@ app.get('/seats', async (req, res) => {
     }
 });
 
-function findClosestSeats(availableSeats, numSeats) {
+function findClosestSeats(availableSeats, numSeats){
     const bookedSeats = [];
 
     // Group seats by rows to preserve row proximity
@@ -51,7 +51,7 @@ function findClosestSeats(availableSeats, numSeats) {
     return bookedSeats;
 }
 
-app.post('/book', express.json(), async (req, res) => {
+app.post('/book', express.json(), async (req, res) =>{
     const { numSeats } = req.body;
   
     // Validate the number of seats
